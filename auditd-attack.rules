@@ -1,5 +1,5 @@
 # auditd-attack
-# A Linux Auditd configuration mapped to MITRE's Attack Framework
+# A Linux Auditd rule set mapped to MITRE's Attack Framework
 # Most of my inspiration came from various individuals so I wont name them all, but your work does not go 
 # unnoticed!
 
