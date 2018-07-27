@@ -1,2 +1,2 @@
 # auditd-attack
-A Linux Auditd configuration mapped to MITRE's Attack Framework
+A Linux Auditd rule set mapped to MITRE's Attack Framework
