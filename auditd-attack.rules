@@ -10,6 +10,7 @@
 #[cyb3rops](https://gist.github.com/Neo23x0/9fe88c0c5979e017a389b90fd19ddfee)
 #[ugurengin](https://gist.github.com/ugurengin/4d37ee83e87bc44291f8ae87a00504cd)
 #[checkraze](https://github.com/checkraze/auditd-rules/blob/master/auditd.rules)
+#[auditdBroFramework](https://github.com/set-element/auditdBroFramework/blob/master/system_config/audit.rules)
 
 # Remove any existing rules
 -D
