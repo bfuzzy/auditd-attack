@@ -3,6 +3,14 @@
 # Most of my inspiration came from various individuals so I wont name them all, but you're work does not go 
 # unnoticed!
 
+### Special Thanks To
+
+#[Eric Gershman](https://github.com/EricGershman/auditd-examples)
+#[iase.disa.mil](https://iase.disa.mil/stigs/os/unix-linux/Pages/red-hat.aspx)
+#[cyb3rops](https://gist.github.com/Neo23x0/9fe88c0c5979e017a389b90fd19ddfee)
+#[ugurengin](https://gist.github.com/ugurengin/4d37ee83e87bc44291f8ae87a00504cd)
+#[checkraze](https://github.com/checkraze/auditd-rules/blob/master/auditd.rules)
+
 # Remove any existing rules
 -D
 
