@@ -19,3 +19,5 @@ Please ensure you test these rules prior to pushing them into production. Also, 
 [ugurengin](https://gist.github.com/ugurengin/4d37ee83e87bc44291f8ae87a00504cd)
 
 [checkraze](https://github.com/checkraze/auditd-rules/blob/master/auditd.rules)
+
+[auditdBroFramework](https://github.com/set-element/auditdBroFramework/blob/master/system_config/audit.rules)
