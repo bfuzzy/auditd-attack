@@ -240,6 +240,8 @@
 -w /etc/gshadow -k T1087_Account_Discovery
 -w /etc/shadow -k T1087_Account_Discovery
 -w /etc/security/opasswd -k T1087_Account_Discovery
+-w /usr/sbin/nologin -k T1087_Account_Discovery
+-w /sbin/nologin -k T1087_Account_Discovery
 -w /usr/bin/whoami -p x -k T1033_System_Owner_User_Discovery
 -w /etc/hostname -p r -k T1082_System_Information_Discovery
 -w /sbin/iptables -p x -k T1082_System_Information_Discovery
