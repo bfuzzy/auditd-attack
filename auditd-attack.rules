@@ -288,6 +288,9 @@
 -w /etc/csh.cshrc -k T1156_bash_profile_and_bashrc
 -w /etc/csh.login -k T1156_bash_profile_and_bashrc
 
+#Remote File Copy
+-w /usr/bin/ftp -p x -k T1105_remote_file_copy
+
 ## File Deletion by User Related Events
 -a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k T1107_File_Deletion
 -a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k T1107_File_Deletion
