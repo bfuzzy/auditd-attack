@@ -270,6 +270,23 @@
 -w /usr/bin/socat -p x -k T1219_Remote_Access_Tools
 -w /usr/bin/rdesktop -p x -k T1219_Remote_Access_Tools
 
+##Third Party Software 
+# RPM (Redhat/CentOS)
+-w /usr/bin/rpm -p x -k T1072_third_party_software
+-w /usr/bin/yum -p x -k T1072_third_party_software
+
+# YAST/Zypper/RPM (SuSE)
+-w /sbin/yast -p x -k T1072_third_party_software
+-w /sbin/yast2 -p x -k T1072_third_party_software
+-w /bin/rpm -p x -k T1072_third_party_software
+-w /usr/bin/zypper -k T1072_third_party_software
+
+# DPKG / APT-GET (Debian/Ubuntu)
+-w /usr/bin/dpkg -p x -k T1072_third_party_software
+-w /usr/bin/apt-add-repository -p x -k T1072_third_party_software
+-w /usr/bin/apt-get -p x -k T1072_third_party_software
+-w /usr/bin/aptitude -p x -k T1072_third_party_software
+
 ## Code injection Related Events
 -a always,exit -F arch=b32 -S ptrace -k T1055_Process_Injection
 -a always,exit -F arch=b64 -S ptrace -k T1055_Process_Injection
