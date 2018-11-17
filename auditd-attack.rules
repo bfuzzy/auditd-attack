@@ -195,6 +195,13 @@
 ## SSH Related Events
 -w /etc/ssh/sshd_config -k T1021_Remote_Services
 
+##C2 Releated Events
+#Log 64 bit processes (a2!=6e filters local unix socket calls)
+-a exit,always -F arch=b64 -S connect -F a2!=110 -k T1043_Commonly_Used_Port
+
+#Log 32 bit processes (a0=3 means only outbound sys_connect calls)
+-a exit,always -F arch=b32 -S socketcall -F a0=3 -k T1043_Commonly_Used_Port
+
 ## Priv Escalation Related Events
 -w /bin/su -p x -k T1169_Sudo
 -w /usr/bin/sudo -p x -k T1169_Sudo
