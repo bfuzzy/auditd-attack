@@ -312,6 +312,10 @@
 -w /etc/csh.cshrc -k T1156_bash_profile_and_bashrc
 -w /etc/csh.login -k T1156_bash_profile_and_bashrc
 
+#Log all commands (Noisy)
+#-a exit,always -F arch=b64 -S execve -k T1059_CommandLine_Interface
+#-a exit,always -F arch=b32 -S execve -k T1059_CommandLine_Interface
+
 #Remote File Copy
 -w /usr/bin/ftp -p x -k T1105_remote_file_copy
 
