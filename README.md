@@ -5,7 +5,11 @@ A Linux Auditd rule set mapped to MITRE's Attack Framework
 
 ## Disclaimer
 
-Please ensure you test these rules prior to pushing them into production. Also, events related to sudo and file creation / deletion types of events...etc can be fairly noisy during day-to-day operations and I reccomend you disable them if you're not prepared to handle a large corpus of events, but are needed for detection / hunting purposes. 
+Please ensure you test these rules prior to pushing them into production. This rule set is NOT meant to have all of its rules enabled all at once (although that'd be ideal) it is setup to serve as guidance toward increasing detection/hunting coverage. 
+
+## WIKI
+
+[WIKI](https://github.com/bfuzzy/auditd-attack/wiki/Audit-Event-Fields)
 
 
 ## Special Thanks To:
