@@ -265,6 +265,13 @@
 -w /usr/sbin/traceroute -p x -k T1049_System_Network_Connections_discovery
 -w /usr/bin/wireshark -p x -k T1049_System_Network_Connections_discovery
 -w /usr/bin/rawshark -p x -k T1049_System_Network_Connections_discovery
+-w /usr/bin/grep -p x -k T1081_Credentials_In_Files
+-w /usr/bin/egrep -p x -k T1081_Credentials_In_Files
+-w /usr/bin/ps -p x -k T1057_Process_Discovery
+
+## Data Copy(Local)
+-w /usr/bin/cp -p x -k T1005_Data_from_Local_System
+-w /usr/bin/dd -p x -k T1005_Data_from_Local_System
 
 ## Remote Access Related Events
 -w /usr/bin/wget -p x -k T1219_Remote_Access_Tools
