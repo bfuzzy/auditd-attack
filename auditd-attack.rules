@@ -94,6 +94,7 @@
 -a always,exit -F arch=b32 -S clock_settime -k T1099_Timestomp
 -a always,exit -F arch=b64 -S clock_settime -k T1099_Timestomp
 -w /etc/localtime -p wa -k T1099_Timestomp
+-a always,exit -F arch=b32 -S touch -k T1099_Timestomp
 
 ## Stunnel 
 -w /usr/sbin/stunnel -p x -k T1079_Multilayer_Encryption
@@ -115,6 +116,11 @@
 -w /etc/at.deny -p wa -k T1168_Local_Job_Scheduling
 -w /var/spool/at/ -p wa -k T1168_Local_Job_Scheduling
 -w /etc/anacrontab -p wa -k T1168_Local_Job_Scheduling
+
+## Systemd service related events
+-w /etc/systemd/system/ -k T1501_Systemd_Service
+-w /usr/lib/systemd/system/ -k T1501_Systemd_Service
+-w /run/systemd/system/ -k T1501_Systemd_Service
 
 ## Account Related Events
 -w /etc/sudoers -p wa -k T1078_Valid_Accounts
@@ -310,6 +316,7 @@
 -a always,exit -F arch=b64 -S ptrace -F a0=0x5 -k T1055_Process_Injection
 -a always,exit -F arch=b32 -S ptrace -F a0=0x6 -k T1055_Process_Injection
 -a always,exit -F arch=b64 -S ptrace -F a0=0x6 -k T1055_Process_Injection
+-w /etc/ld.so.preload -k T1055_Process_Injection
 
 ## Shell configuration Persistence Related Events
 -w /etc/profile.d/ -k T1156_bash_profile_and_bashrc
