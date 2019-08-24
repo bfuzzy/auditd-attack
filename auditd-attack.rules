@@ -95,6 +95,7 @@
 -a always,exit -F arch=b64 -S clock_settime -k T1099_Timestomp
 -w /etc/localtime -p wa -k T1099_Timestomp
 -a always,exit -F arch=b32 -S touch -k T1099_Timestomp
+-a always,exit -F arch=b64 -S touch -k T1099_Timestomp
 
 ## Stunnel 
 -w /usr/sbin/stunnel -p x -k T1079_Multilayer_Encryption
